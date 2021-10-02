@@ -1,0 +1,9 @@
+<p>Here the kitchen!</p>
+<br>
+<p>Service : </p>
+<ul *ngFor="let m of meals">
+    <li>{{m}} <a style="color: green;text-decoration: underline;" (click)="Delete(m)">Delete</a></li>
+</ul>
+<p>Add meal : </p> 
+<input type="text" #box >
+<button style="background-color: rgb(60, 255, 60);outline: none;" (click)="addMeal(box.value)">Add</button>
